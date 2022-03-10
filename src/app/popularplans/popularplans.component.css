@@ -1,0 +1,54 @@
+.combo-box{
+    background: #f2f1f1;
+    padding: 25px;
+    margin: 50px;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    height: 250px;
+    border-left:6px solid rgb(33, 30, 212);
+    float: left;
+}
+body{
+    background: url(Popularback.jpg);
+    background-size: cover;
+    position: absolute;
+    width: 1520px;
+    height: 1000px;
+    left: 0px;
+    top: 65px;
+}
+.combo-box button{
+    background-color: #fdf8ff;
+    color: black;
+    border-radius: 12px;
+}
+.combo-box button:hover{
+    background-color: rgb(101, 16, 182);
+    color: white;
+}
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    #PopularPlans{
+        text-decoration: none;
+        color: rgb(247, 10, 10);
+        font-size: 20px;
+
+    }

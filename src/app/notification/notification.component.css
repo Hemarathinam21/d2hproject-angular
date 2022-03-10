@@ -1,0 +1,36 @@
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+        
+
+    }
+#notification{
+    color: red;
+    font-size: 20px;
+}    
+#notificationBody{
+    background: #f2f1f1;
+    padding: 25px;
+    margin: 50px;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    height: 250px;
+    border:6px solid rgb(149, 13, 190);
+    text-align: center;
+}

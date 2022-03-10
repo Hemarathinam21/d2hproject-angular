@@ -1,0 +1,95 @@
+
+.form{
+    background-color: rgb(230, 231, 231);
+    background: url(d2h_back.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 650px;
+    position: absolute;
+    left: 150px;
+    top: 65px;
+}
+.form{
+    padding: 25px;
+    margin: 50px;
+    border-radius: 20px;
+    width: 1000px;
+    transition: all .2s ease-in-out;
+    height: 550px;
+    border:6px solid rgb(173, 8, 173);
+    text-align: center;
+}
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+
+    }
+    #PopularPlans{
+        color:white;
+        font-size: 15px;
+    }
+#rechargeType{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#name{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#mobile{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#email{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#rechargePlan{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#rechargePrice{
+    border-radius: 12px;
+    margin: 40px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+}
+#btn{
+    height: 45px;
+    width: 150px;
+    background-color: rgb(145, 26, 168);
+    color: white;
+    border-radius: 12px;
+}

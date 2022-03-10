@@ -1,0 +1,37 @@
+<div class="menu" >
+    <ul>
+        <li>AVI D2H</li>
+        <li><a routerLink="/user/dashboard" id="home">Home</a></li>
+        <li><a routerLink="/user/popularplans" id="PopularPlans">Popular plans</a></li>
+        <li ><a routerLink="/user/addons" id="userAddOns">Add ons</a></li>
+        <li><a routerLink="/user/Review" id="review">Review</a></li>
+        <li id="notification">Notification<img src="https://cdn-icons-png.flaticon.com/128/891/891012.png" style="margin: 10px;" width="25" height="18"></li>
+        <li><a routerLink="/user/getRecharge" id="history">Recharge details</a></li>
+        <li id="logout">Logout<img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" style="margin: 10px;" width="25" height="18"></li>
+    </ul>
+    
+</div>
+<body >
+    <div class="form">
+        <form #addForm="ngForm" (ngSubmit)="onAddReview(addForm)">
+            <h3>DROP YOUR REVIEWS HERE<img src="https://t3.ftcdn.net/jpg/03/94/20/92/240_F_394209222_DXgjy9uxZkGrzPlGHBTQrxmYcLz0K3DO.jpg" style="width: 100px;height: 80px;"></h3><br>
+            <table style="margin-left: 100px;">
+            <tr class="id1">
+                <td>Name:</td>  
+                <td><input type="text" ngModel name="name" id="name" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr class="id1" >
+            <td >Feedback:</td>
+            <td><textarea type="text" ngModel name="feedback" id="feedback" placeholder="Enter Your Feedback" ></textarea></td>
+            </tr>
+            <tr class="id1">
+            <td> Rating:</td>  
+            <td><input type="number" ngModel name="rating" id="rating" placeholder="Enter Your Rating"></td>
+            </tr> 
+            </table><br>
+            <button  [disabled]="addForm.invalid" type="submit"  class="btn" id="btn" >Submit</button>
+        </form>
+    </div>
+</body>
+
+

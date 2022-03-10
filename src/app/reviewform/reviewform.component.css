@@ -1,0 +1,68 @@
+ .form{
+    background-repeat:no-repeat;
+    background-position: center; 
+    background-size: 650px; 
+    position: absolute; 
+     left: 150px;
+    top: 65px; 
+} 
+.form{
+    padding: 25px;
+    margin: 150px;
+    border-radius: 20px;
+    width: 600px;
+    transition: all .2s ease-in-out;
+    height: 400px;
+    border:6px solid rgb(173, 8, 173);
+    text-align: center;
+    margin-left: 300px;
+}
+th, td {
+    padding:5px
+}
+.btn{
+    height: 50px;
+    width: 125px;
+    color: white;
+    background-color: #682E8B;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    ul li a{
+        text-decoration: none;
+        color:white;
+    }
+
+    .id1{
+        font-weight: bold;
+    }
+
+    #name,#feedback,#rating{
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    				                
+				              

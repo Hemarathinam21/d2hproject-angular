@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Details</title>
+    </head>
+    <div class="menu" >
+        <ul>
+            <li>AVI D2H</li>
+            <li><a routerLink="/user/dashboard" id="home">Home</a></li>
+            <li><a routerLink="/user/popularplans" id="PopularPlans">Popular plans</a></li>
+            <li ><a routerLink="/user/addons" id="userAddOns">Add ons</a></li>
+            <li><a routerLink="/user/Review" id="review">Review</a></li>
+            <li id="notification">Notification<img src="https://cdn-icons-png.flaticon.com/128/891/891012.png" style="margin: 10px;" width="25" height="18"></li>
+            <li><a routerLink="/user/getRecharge" id="history">Recharge details</a></li>
+            <li id="logout">Logout<img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" style="margin: 10px;" width="25" height="18"></li>
+        </ul>
+        
+    </div>
+        <div class="form">
+        <form #addForm="ngForm" (ngSubmit)="onAddPlans(addForm)" >
+            <input type="text" ngModel name="rechargeType" id="rechargeType" placeholder="Enter your recharge type" required>
+            <input type="text" ngModel name="name" id="name" placeholder="Enter your name" required>
+            <input type="text" ngModel name="mobile" id="mobile" placeholder="Enter number to recharge" required>
+            <input type="email" ngModel name="email" id="email" placeholder="Enter email Id" required> 
+            <input type="number" ngModel name="rechargePlan" id="rechargePlan" placeholder="Enter Recharge Plan" required>
+            <input type="number" ngModel name="rechargePrice" id="rechargePrice" placeholder="Recharge Price" required><br>
+            <button  [disabled]="addForm.invalid" type="submit" class="btn" id="btn" >Recharge Now</button>
+        </form>
+        </div>
+        
+</html>

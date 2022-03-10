@@ -1,0 +1,78 @@
+               
+<div class="menu" >
+    <ul>
+        <li>AVI D2H</li>
+        <li><a routerLink="/user/dashboard" id="home">Home</a></li>
+        <li><a routerLink="/user/popularplans" id="PopularPlans">Popular plans</a></li>
+        <li ><a routerLink="/user/addons" id="userAddOns">Add ons</a></li>
+        <li><a routerLink="/user/Review" id="review">Review</a></li>
+        <li id="notification">Notification<img src="https://cdn-icons-png.flaticon.com/128/891/891012.png" style="margin: 10px;" width="25" height="18"></li>
+        <li><a routerLink="/user/getRecharge" id="history">Recharge details</a></li>
+        <li id="logout">Logout<img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" style="margin: 10px;" width="25" height="18"></li>
+    </ul>
+    
+</div>
+<form class="search">
+    <input type="search" id="name" (ngModelChange)="getRechargeByName(key.value)" #key="ngModel" ngModel name="key" placeholder="Search for your plan history">
+</form>
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+          <tr>
+            <th>Recharge Id</th>
+            <th>Recharge Type</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email Id</th>
+            <th>Recharge Plan</th>
+            <th>Recharge Price</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pl of plandetails">
+          <td>{{pl.rechargeId}}</td>
+          <td>{{pl.rechargeType}}</td>
+          <td>{{pl.name}}</td>
+          <td>{{pl.mobile}}</td>
+          <td>{{pl.email}}</td>
+          <td>{{pl.rechargePlan}}</td>
+          <td>{{pl.rechargePrice}}</td>
+          <td> <img src="https://cdn-icons-png.flaticon.com/128/1827/1827933.png" (click)="openPopup(pl)" style="width: 25px;"></td>
+          <td><img src="https://cdn-icons-png.flaticon.com/128/1345/1345874.png" (click)="delete(pl)" style="width: 25px;"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<button routerLink="/user/dashboard" align="center" id="btn">Back</button>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}"
+    id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color:rgb(116, 13, 156);font-weight: bold;">UPDATE PLAN</h5>
+          <img src="../assets/cancel.png" (click)="close()" style="width: 20px;">
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <form #updateForm="ngForm" (ngSubmit)="register()"  >
+                  
+                    <div class="page">
+                      Recharge Type: <input type="text"  [(ngModel)]="plansupdate.rechargeType" name="rechargeType" id="rechargeType" placeholder="Enter your recharge type" required><br><br>
+                    </div>
+                    <div class="page">
+                      Recharge Plan: <input type="number"  [(ngModel)]="plansupdate.rechargePlan" name="rechargePlan" id="rechargePlan" placeholder="Enter Recharge Plan" required><br><br>
+                    </div>
+                   
+                    <div class="page">
+                      Recharge Price: <input type="number"  [(ngModel)]="plansupdate.rechargePrice"name="rechargePrice" id="rechargePrice" placeholder="Recharge Price" required><br><br>
+                    </div>
+                    <div >
+                        <button type="submit" class="btn btn-primary"  class="btn btn-primary" id="addOnButton" (click)="close()" style="margin-left: 140px; background-color: rgb(95, 13, 172);">Update plan</button>
+                    </div>
+                </form>   
+            <div>    
+        </div>  
+      </div>
+    </div>
+  </div>
+

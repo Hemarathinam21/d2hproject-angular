@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+    </head>
+    <div class="menu" >
+        <ul>
+            <li>AVI D2H</li>
+            <li><a routerLink="/user/dashboard" id="home">Home</a></li>
+            <li><a routerLink="/user/popularplans" id="PopularPlans">Popular plans</a></li>
+            <li ><a routerLink="/user/addons" id="userAddOns">Add ons</a></li>
+            <li><a routerLink="/user/Review" id="review">Review</a></li>
+            <li id="notification">Notification<img src="https://cdn-icons-png.flaticon.com/128/891/891012.png" style="margin: 10px;" width="25" height="18"></li>
+            <li><a routerLink="/user/getRecharge" id="history">Recharge details</a></li>
+            <li id="logout">Logout<img src="https://cdn-icons-png.flaticon.com/128/847/847969.png" style="margin: 10px;" width="25" height="18"></li>
+        </ul>
+        
+    </div>
+        <body style="background-image:url('back.jpg') ">
+        
+        <div class="combo-box1" style="width:50%;" id="popularPlanGrid1">
+                <span class="badge rounded-pill bg-dark" style="width: 150px; font-size: 20px;">Monthly Plans</span>
+                <h3>₹799</h3>
+                <p>channel:English and tamil Channels only<br>
+                HD channels are available +Netflix<br>
+                Note :You can recharge with above plan <br>
+                the same benifits of earlier plan Rs.555 plan</p>
+                
+                <small class="combo-small" style="color: orangered;">Offer:20% upto Rs.200 cashback</small>
+                <div class="vertical">
+                   <p style="margin: 20px;">    Channels:  English and tamil channels only                            <br>
+                    Validity: 28 days</p>
+                    <img src="https://tse1.mm.bing.net/th?id=OIP.4f6hFvkPBtE44ZLhWWeiDgHaEK&pid=Api&P=0&w=287&h=161" style="margin: 10px;" width="50" height="50">
+                    <a routerLink="/user/addRecharge">-></a>
+                </div>
+               
+        </div>
+        <div class="combo-box2" style="width:50%;" id="popularPlanGrid2">
+            <span class="badge rounded-pill bg-dark" style="width: 150px; font-size: 20px;">Premium Plans</span>
+            <h3>₹1999</h3>
+                <p>channel:All Language+sports<br>
+                HD channels are available + Netflix<br>
+                Note :You can recharge with above plan <br>
+                the same benifits of earlier plan Rs.1250 plan</p>
+                <small class="combo-small" style="color: orangered;">Offer:20% upto Rs.200 cashback</small>
+                <div class="vertical-down">
+                    <p style="margin: 20px;"> Channels:  All Language + sports             <br>
+                        Validity:    6months</p>
+                        <img src="https://tse1.mm.bing.net/th?id=OIP.4f6hFvkPBtE44ZLhWWeiDgHaEK&pid=Api&P=0&w=287&h=161" style="margin: 10px;" width="50" height="50">
+                    <a routerLink="/user/addRecharge">-></a>
+                </div>
+                   
+        </div>
+    </body>
+</html>

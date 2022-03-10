@@ -1,0 +1,51 @@
+.menu{
+    background:purple ;
+    text-align: center;
+    height: 50px;
+    }
+    .menu ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li{
+        width:150px;
+        margin:5px;
+        padding: 7px;
+        font-weight: bold;
+    }
+    ul li a{
+        text-decoration: none;
+        color: white;
+
+    }
+#history{
+    color: red;
+}    
+#btn{
+    height: 45px;
+    width: 150px;
+    background-color: rgb(145, 26, 168);
+    color: white;
+    margin-left: 650px;
+    text-align: center;
+    border-radius: 12px;
+}
+#btn:hover{
+    background-color: black;
+}
+#name{
+    margin-left: 550px;
+    margin-top: 30px;
+    border-radius:12px;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+}
+.page{
+    font-weight: bold ;
+}
+
+
+  
+  
